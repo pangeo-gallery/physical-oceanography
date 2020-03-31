@@ -1,8 +1,9 @@
 ---
-name: Example Gallery
+name: Physical Oceanography
 description: >-
-  An example gallery of notebooks used for debugging the Pangeo Gallery
-  infrastructure.
+  Examples of how to use Xarray, Dask, and Holoviews to load, process,
+  and visualize cloud-based ocean data. Datasets include satellite observations
+  (sea-surface height) and ocean model output (POP, MOM6).
 gallery_repository: pangeo-gallery/pangeo-gallery
 binder_url: "https://binder.pangeo.io"
 binder_repo: pangeo-gallery/default-binder
