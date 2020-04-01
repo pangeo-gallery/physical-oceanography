@@ -72,10 +72,4 @@ jobs:
           branch: ${{ steps.parse.outputs.binderbot_target_branch }}
           force: true
       - name: Trigger repository dispatch on Pangeo Gallery
-        if: github.ref == 'refs/heads/master'
-        uses: peter-evans/repository-dispatch@v1
-        with:
-          repository: ${{ steps.parse.outputs.gallery_repository }}
-          token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-          event-type: update-gallery
-          client-payload: '{"repo": "${{ github.repository }}", "branch": "${{ steps.parse.outputs.binderbot_target_branch }}", "sha": "${{ github.sha }}"}'
+        run: curl -f https://pangeo-gallery-bot.herokuapp.com/gallery/submodule-dispatch/${{ github.repository }}
