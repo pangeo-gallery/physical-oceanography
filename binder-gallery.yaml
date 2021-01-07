@@ -7,5 +7,5 @@ description: >-
 gallery_repository: pangeo-gallery/pangeo-gallery
 binder_url: "https://binder.pangeo.io"
 binder_repo: pangeo-gallery/default-binder
-binder_ref: 7b84eb4
+binder_ref: 80584d2
 binderbot_target_branch: binderbot-built
