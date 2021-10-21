@@ -6,6 +6,6 @@ description: >-
   (gridded sea-surface height) and ocean model output (POP, MOM6).
 gallery_repository: pangeo-gallery/pangeo-gallery
 binder_url: "https://binder.pangeo.io"
-binder_repo: pangeo-gallery/default-binder
-binder_ref: 64d772a
+binder_repo: pangeo-data/pangeo-docker-images
+binder_ref: 2021.10.19
 binderbot_target_branch: binderbot-built
