@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -eux
+mamba create \
+  -y \
+  --file conda-linux-64.lock \
+  --prefix ${NB_PYTHON_PREFIX}
+mamba clean -yaf # clean up downloaded files and indexes
